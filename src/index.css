@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fefdfd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.default-link {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.active-link {
+  color: #08ada0;
+}
+
+.rbc-date-cell > a {
+  cursor: default;
+}
+
+.rbc-day-bg {
+  cursor: pointer;
+}
+
+.MotivationView {
+  margin-top: 20px;
+  flex-basis: 515px;
+  margin-left: 25px;
+  max-height: 850px;
+}
+
+.MotivationView img {
+  width: 515px;
+  max-height: 850px;
+}
+
+.ui.menu > .container.mobileNav {
+  display: none;
+}
+
+.ui.card {
+  width: 130px;
+}
+
+@media (max-width: 524px) {
+  .MotivationView img {
+    max-width: 350px;
+  }
+
+  .ui.menu > .container.mobileNav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .ui.menu > .container.desktopNav {
+    display: none;
+  }
+
+  .MotivationView {
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .MotivationView img {
+    max-width: 280px;
+    max-height: 550px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .singleDayContainer {
+    max-width: 250px;
+  }
+
+  .ui.secondary.pointing.menu {
+    max-width: 524px;
+  }
+}
